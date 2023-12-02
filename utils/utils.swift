@@ -35,3 +35,21 @@ extension String {
         return String(self[start ..< end])
     }
 }
+
+func printSolutionOne(_ solution: Any) {
+    print("🎄 Solution 1 = \(solution)  🎄")
+}
+
+func printSolutionTwo(_ solution: Any) {
+    print("🎄 Solution 2 = \(solution)  🎄")
+}
+
+func getAllSubstrings(_ str: String) -> [String] {
+    var result: [String] = []
+    for i in 0 ..< str.count + 1 {
+        for j in (i + 1) ..< str.count + 1 {
+            result.append(str[i ..< j])
+        }
+    }
+    return result
+}

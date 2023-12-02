@@ -23,7 +23,7 @@ let solutionOne: (String) -> Void = { line in
 let inputPath = getPath("day1/input.txt")
 
 readFile(inputPath, callback: solutionOne)
-print("solution 1 = " + String(numbers.reduce(0, +)))
+printSolutionOne(numbers.reduce(0, +))
 
 // part 2
 
@@ -84,15 +84,5 @@ let solutionTwo: (String) -> Void = { line in
     numbers.append(Int(firstNumber + lastNumber)!)
 }
 
-func getAllSubstrings(_ str: String) -> [String] {
-    var result: [String] = []
-    for i in 0 ..< str.count + 1 {
-        for j in (i + 1) ..< str.count + 1 {
-            result.append(str[i ..< j])
-        }
-    }
-    return result
-}
-
 readFile(inputPath, callback: solutionTwo)
-print("solution 2 = " + String(numbers.reduce(0, +)))
+printSolutionTwo(numbers.reduce(0, +))
