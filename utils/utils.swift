@@ -1,27 +1,5 @@
 import Foundation
 
-// read text file line by line
-public func readFile(_ path: String, callback: (String) -> Void) -> Int {
-    errno = 0
-    if freopen(path, "r", stdin) == nil {
-        perror(path)
-        return 1
-    }
-
-    while let line = readLine() {
-        callback(String(line))
-    }
-    return 0
-}
-
-public func getPath(_ filePath: String) -> String {
-    var path = URL(fileURLWithPath: #file).absoluteString
-    var index = path.lastIndex(of: "/")
-    path = String(path.prefix(upTo: index!))
-    index = path.lastIndex(of: "/")
-    return String(path.prefix(upTo: index!)).dropFirst(7) + "/" + filePath
-}
-
 extension String {
     subscript(bounds: CountableClosedRange<Int>) -> String {
         let start = index(startIndex, offsetBy: bounds.lowerBound)
@@ -34,6 +12,29 @@ extension String {
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return String(self[start ..< end])
     }
+}
+
+// read text file line by line
+public func readFile(_ path: String, callback: (Int, String) -> Void) {
+    errno = 0
+    if freopen(path, "r", stdin) == nil {
+        perror(path)
+        return
+    }
+
+    var row = 0
+    while let line = readLine() {
+        callback(row, String(line))
+        row += 1
+    }
+}
+
+public func getPath(_ filePath: String) -> String {
+    var path = URL(fileURLWithPath: #file).absoluteString
+    var index = path.lastIndex(of: "/")
+    path = String(path.prefix(upTo: index!))
+    index = path.lastIndex(of: "/")
+    return String(path.prefix(upTo: index!)).dropFirst(7) + "/" + filePath
 }
 
 func printSolutionOne(_ solution: Any) {
@@ -52,4 +53,14 @@ func getAllSubstrings(_ str: String) -> [String] {
         }
     }
     return result
+}
+
+func updateDictionary<K, V: Comparable>(key: K, value: V, condition: (_ value: V) -> Bool, dict: inout [K: V]) {
+    guard let foundValue: V = dict[key] else {
+        dict[key] = value
+        return
+    }
+    if condition(foundValue) {
+        dict[key] = value
+    }
 }

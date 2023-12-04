@@ -2,9 +2,8 @@ import Foundation
 
 let inputPath = getPath("day2/input.txt")
 var games: [Int: [[String: Int]]] = [:]
-let processLines: (String) -> Void = { line in
+let processLines: (Int, String) -> Void = { _, line in
     if line.isEmpty { return }
-    let test = line[5 ..< 6]
     let numberEnd = line.firstIndex(of: ":")!
     let numberStart = line.firstIndex(of: " ")!
 
@@ -17,8 +16,8 @@ let processLines: (String) -> Void = { line in
         var roundData: [String: Int] = [:]
         let cubeNumberAndColourData = round.components(separatedBy: ",")
         for cubeNumberAndColour in cubeNumberAndColourData {
-            let NumberAndColourArray = (cubeNumberAndColour.trimmingCharacters(in: .whitespaces)).components(separatedBy: " ")
-            roundData[NumberAndColourArray.last!] = Int(NumberAndColourArray.first!)!
+            let numberAndColourArray = (cubeNumberAndColour.trimmingCharacters(in: .whitespaces)).components(separatedBy: " ")
+            roundData[numberAndColourArray.last!] = Int(numberAndColourArray.first!)!
         }
         rounds.append(roundData)
     }
@@ -61,13 +60,14 @@ for (_, rounds) in games {
     var powerSet: [String: Int] = [:]
     for round in rounds {
         for (cubeColour, cubeNumber) in round {
-            guard let currentMaxNumber = powerSet[cubeColour] else {
-                powerSet[cubeColour] = cubeNumber
-                continue
-            }
-            if currentMaxNumber < cubeNumber {
-                powerSet[cubeColour] = cubeNumber
-            }
+            updateDictionary(
+                key: cubeColour,
+                value: cubeNumber,
+                condition: { currentMax in
+                    currentMax < cubeNumber
+                },
+                dict: &powerSet
+            )
         }
     }
     powerSets.append(powerSet)

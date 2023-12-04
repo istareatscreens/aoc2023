@@ -2,7 +2,7 @@ import Foundation
 
 // part 1
 var numbers: [Int] = []
-let solutionOne: (String) -> Void = { line in
+let solutionOne: (Int, String) -> Void = { _, line in
     var firstNumber = ""
     var lastNumber = ""
     for char in line {
@@ -41,7 +41,7 @@ let numbersDictionary: [String: Int] = [
     "nine": 9,
 ]
 
-let solutionTwo: (String) -> Void = { line in
+let solutionTwo: (Int, String) -> Void = { _, line in
     var parts: [String] = []
     var spelledNumber = ""
     for char in line {
