@@ -14,6 +14,8 @@
 		3D584DBC2B1A1F68003D1EE4 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8E3072B1A1C98006214EE /* utils.swift */; };
 		3DE8E2FD2B1A1C1F006214EE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8E2FC2B1A1C1F006214EE /* main.swift */; };
 		3DE8E3082B1A1C98006214EE /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8E3072B1A1C98006214EE /* utils.swift */; };
+		3DED78CE2B1E63DD0016D0CE /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8E3072B1A1C98006214EE /* utils.swift */; };
+		3DED78D72B1E63F90016D0CE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DED78C62B1E63D80016D0CE /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,20 +55,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		3DED78D02B1E63DD0016D0CE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3D02A5312B1B6CB70046824A /* day2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day2; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D02A5312B1B6CB70046824A /* day2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = day2; path = /Users/stephen.charbonneau/aoc2023/build/Debug/day2; sourceTree = "<absolute>"; };
 		3D02A5332B1B6CB70046824A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3D02A55A2B1B93FB0046824A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		3D02A56A2B1B94130046824A /* day3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day3; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D02A56A2B1B94130046824A /* day3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = day3; path = /Users/stephen.charbonneau/aoc2023/build/Debug/day3; sourceTree = "<absolute>"; };
 		3D02A56D2B1B989D0046824A /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		3D02A56E2B1B98B10046824A /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		3D02A56F2B1D1FC40046824A /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
-		3DE8E2FA2B1A1C1F006214EE /* day1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day1; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE8E2FA2B1A1C1F006214EE /* day1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = day1; path = /Users/stephen.charbonneau/aoc2023/build/Debug/day1; sourceTree = "<absolute>"; };
 		3DE8E2FC2B1A1C1F006214EE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		3DE8E3052B1A1C98006214EE /* utils */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = utils; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE8E3052B1A1C98006214EE /* utils */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = utils; path = /Users/stephen.charbonneau/aoc2023/build/Debug/utils; sourceTree = "<absolute>"; };
 		3DE8E3072B1A1C98006214EE /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		3DED78C62B1E63D80016D0CE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3DED78D62B1E63DD0016D0CE /* day4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = day4; path = /Users/stephen.charbonneau/aoc2023/build/Debug/day4; sourceTree = "<absolute>"; };
+		3DED78D82B1E6B140016D0CE /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +106,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3DE8E3022B1A1C98006214EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DED78CF2B1E63DD0016D0CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -126,19 +147,8 @@
 				3DE8E2FB2B1A1C1F006214EE /* day1 */,
 				3D02A5322B1B6CB70046824A /* day2 */,
 				3D02A5592B1B93FB0046824A /* day3 */,
-				3DE8E2ED2B1A1BA3006214EE /* Products */,
+				3DED78C52B1E63D80016D0CE /* day4 */,
 			);
-			sourceTree = "<group>";
-		};
-		3DE8E2ED2B1A1BA3006214EE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3DE8E2FA2B1A1C1F006214EE /* day1 */,
-				3DE8E3052B1A1C98006214EE /* utils */,
-				3D02A5312B1B6CB70046824A /* day2 */,
-				3D02A56A2B1B94130046824A /* day3 */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3DE8E2FB2B1A1C1F006214EE /* day1 */ = {
@@ -156,6 +166,15 @@
 				3DE8E3072B1A1C98006214EE /* utils.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		3DED78C52B1E63D80016D0CE /* day4 */ = {
+			isa = PBXGroup;
+			children = (
+				3DED78C62B1E63D80016D0CE /* main.swift */,
+				3DED78D82B1E6B140016D0CE /* input.txt */,
+			);
+			path = day4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +249,32 @@
 			dependencies = (
 			);
 			name = utils;
+			packageProductDependencies = (
+			);
 			productName = utils;
 			productReference = 3DE8E3052B1A1C98006214EE /* utils */;
+			productType = "com.apple.product-type.tool";
+		};
+		3DED78CB2B1E63DD0016D0CE /* day4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DED78D32B1E63DD0016D0CE /* Build configuration list for PBXNativeTarget "day4" */;
+			buildPhases = (
+				3DED78CC2B1E63DD0016D0CE /* Sources */,
+				3DED78CF2B1E63DD0016D0CE /* Frameworks */,
+				3DED78D02B1E63DD0016D0CE /* CopyFiles */,
+				3DED78D12B1E63DD0016D0CE /* SwiftFormat */,
+				3DED78D22B1E63DD0016D0CE /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DED78E42B1E80BB0016D0CE /* PBXTargetDependency */,
+			);
+			name = day4;
+			packageProductDependencies = (
+			);
+			productName = day2;
+			productReference = 3DED78D62B1E63DD0016D0CE /* day4 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +307,9 @@
 				Base,
 			);
 			mainGroup = 3DE8E2E32B1A1BA3006214EE;
-			productRefGroup = 3DE8E2ED2B1A1BA3006214EE /* Products */;
+			packageReferences = (
+			);
+			productRefGroup = 3DE8E2E32B1A1BA3006214EE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -272,6 +317,7 @@
 				3DE8E3042B1A1C98006214EE /* utils */,
 				3D02A5302B1B6CB70046824A /* day2 */,
 				3D02A55F2B1B94130046824A /* day3 */,
+				3DED78CB2B1E63DD0016D0CE /* day4 */,
 			);
 		};
 /* End PBXProject section */
@@ -372,6 +418,44 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
+		3DED78D12B1E63DD0016D0CE /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+		3DED78D22B1E63DD0016D0CE /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint .\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -410,7 +494,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DED78CC2B1E63DD0016D0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DED78D72B1E63F90016D0CE /* main.swift in Sources */,
+				3DED78CE2B1E63DD0016D0CE /* utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DED78E42B1E80BB0016D0CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 3DED78E32B1E80BB0016D0CE /* BigInt */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3D02A5362B1B6CB70046824A /* Debug */ = {
@@ -621,6 +721,32 @@
 			};
 			name = Release;
 		};
+		3DED78D42B1E63DD0016D0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3DED78D52B1E63DD0016D0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -669,7 +795,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3DED78D32B1E63DD0016D0CE /* Build configuration list for PBXNativeTarget "day4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DED78D42B1E63DD0016D0CE /* Debug */,
+				3DED78D52B1E63DD0016D0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DED78D92B1E7D430016D0CE /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DED78E32B1E80BB0016D0CE /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DED78D92B1E7D430016D0CE /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DE8E2E42B1A1BA3006214EE /* Project object */;
 }
