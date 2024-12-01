@@ -1,5 +1,5 @@
 <p align="center">
-🎄 Advent of Code 2022 🎄
+🎄 Advent of Code 2023 🎄
 </p>
 <p align="center">
 Hastly thrown together solutions in Swift
